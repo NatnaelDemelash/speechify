@@ -32,6 +32,7 @@
           id="voiceSelect"
           class="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
         >
+          <option value="default">Default Voice</option>
           <option value="voice1">Voice 1</option>
           <option value="voice2">Voice 2</option>
           <option value="voice3">Voice 3</option>
@@ -48,13 +49,6 @@
     </div>
 
     <!-- Optional: Add JavaScript for functionality later -->
-    <script>
-      document.getElementById('playButton').addEventListener('click', () => {
-        const text = document.getElementById('textInput').value;
-        const voice = document.getElementById('voiceSelect').value;
-        alert(`Playing: "${text}" with ${voice}`);
-        // Integrate TTS API here
-      });
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
