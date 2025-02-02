@@ -6,6 +6,21 @@ const statusMessage = document.createElement('p');
 statusMessage.className = 'text-gray-300 text-center mt-4';
 document.querySelector('.bg-gray-800').appendChild(statusMessage);
 
+// Populate language options dynamically
+const languages = {
+  en: 'English',
+  es: 'Spanish',
+  fr: 'French',
+  de: 'German',
+  zh: 'Chinese',
+  ja: 'Japanese',
+  tr: 'Turkish',
+};
+
+languageSelect.innerHTML = Object.entries(languages)
+  .map(([code, name]) => `<option value="${code}">${name}</option>`)
+  .join('');
+
 // Load all voices
 let voices = [];
 
